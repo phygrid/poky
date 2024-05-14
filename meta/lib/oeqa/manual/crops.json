@@ -188,20 +188,20 @@
                     "expected_results": "this should output the directory of the devtool script and it should be within the sdk workdir you are working in.   \n\n"
                 },
                 "5": {
-                    "action": "devtool sdk-install -s libxml2  \n\n",
-                    "expected_results": "this should install libxml2   \n\n"
+                    "action": "devtool sdk-install -s gmp  \n\n",
+                    "expected_results": "this should install gmp   \n\n"
                 },
                 "6": {
-                    "action": "devtool add librdfa  https://github.com/rdfa/librdfa  \n\n",
-                    "expected_results": "This should automatically create the recipe librdfa.bb under /recipes/librdfa/librdfa.bb   \n\n"
+                    "action": "devtool add alisp  https://git.savannah.gnu.org/git/alisp.git  \n\n",
+                    "expected_results": "This should automatically create the recipe alisp_git.bb under /recipes/alisp/alisp_git.bb   \n\n"
                 },
                 "7": {
-                    "action": "devtool build librdfa  \n\n",
+                    "action": "devtool build alisp  \n\n",
                     "expected_results": "This should compile   \n\n"
                 },
                 "8": {
-                    "action": "devtool reset librdfa  ",
-                    "expected_results": "This cleans sysroot of the librdfa recipe, but it leaves the source tree intact. meaning it does not erase."
+                    "action": "devtool reset alisp  ",
+                    "expected_results": "This cleans sysroot of the alisp recipe, but it leaves the source tree intact. meaning it does not erase."
                 }
             },
             "summary": "sdkext_extend_autotools_recipe_creation"

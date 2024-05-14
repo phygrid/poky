@@ -69,9 +69,9 @@ class DevtoolTest(OESDKExtTestCase):
         self._test_devtool_build(self.myapp_cmake_dst)
 
     def test_extend_autotools_recipe_creation(self):
-        req = 'https://github.com/rdfa/librdfa'
-        recipe = "librdfa"
-        self._run('devtool sdk-install libxml2')
+        req = 'https://git.savannah.gnu.org/git/alisp.git'
+        recipe = "alisp"
+        self._run('devtool sdk-install -s gmp')
         self._run('devtool add %s %s' % (recipe, req) )
         try:
             self._run('devtool build %s' % recipe)
